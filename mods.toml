@@ -1,0 +1,32 @@
+modLoader="javafml"
+loaderVersion="[36,)"
+license="MIT"
+
+[[mods]]
+modId="pixelradar"
+version="1.0.0"
+displayName="Pixel Radar"
+description='''
+Minimap client-side : repere les Pokemon shiny et legendaires autour du joueur.
+'''
+
+[[dependencies.pixelradar]]
+    modId="forge"
+    mandatory=true
+    versionRange="[36,)"
+    ordering="NONE"
+    side="CLIENT"
+
+[[dependencies.pixelradar]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.16.5]"
+    ordering="NONE"
+    side="CLIENT"
+
+[[dependencies.pixelradar]]
+    modId="pixelmon"
+    mandatory=true
+    versionRange="[9.1,)"
+    ordering="AFTER"
+    side="CLIENT"
